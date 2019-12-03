@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css" />
+    <title>recommand</title>
+    <style>
+        .col-3 {
+            width: 27.33%;
+            text-align: center;
+            margin: auto;
+            position: relative;
+            display: inline-block;
+        }
+
+        :focus {
+            outline: none;
+        }
+
+        form {
+            margin: 100px;
+        }
+
+        .input-field {
+            position: relative;
+            width: 250px;
+            height: 44px;
+            line-height: 44px;
+        }
+
+        label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            color: #b4b0b0;
+            transition: 0.2s all;
+            cursor: text;
+        }
+
+
+        input {
+            width: 100%;
+            border: 0;
+            outline: 0;
+            padding: 0.5rem 0;
+            border-bottom: 2px solid #d3d3d3;
+            box-shadow: none;
+            color: #111;
+        }
+
+        input:invalid {
+            outline: 0;
+            border-color: #813363;
+        }
+
+        input:focus,
+        input:valid {
+            border-color: #813363;
+        }
+
+        input:focus~label,
+        input:valid~label {
+            font-size: 14px;
+            top: -24px;
+            color: #813363;
+        }
+
+        label.btn span {
+            font-size: 1.5em;
+        }
+
+        label input[type="radio"]~i.fa.fa-circle-o {
+            color: #c8c8c8;
+            display: inline;
+        }
+
+        label input[type="radio"]~i.fa.fa-dot-circle-o {
+            display: none;
+        }
+
+        label input[type="radio"]:checked~i.fa.fa-circle-o {
+            color:black;
+            display: none;
+        }
+ ㅈ
+        label input[type="radio"]:checked~i.fa.fa-dot-circle-o {
+            color:black;
+            display: inline;
+        }
+
+        label:hover input[type="radio"]~i.fa {
+            color:black;
+        }
+
+
+        div[data-toggle="buttons"] label.active {
+            color:#813363;
+        }
+
+        div[data-toggle="buttons"] label {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 2em;
+            text-align: left;
+            white-space: nowrap;
+            vertical-align: top;
+            cursor: pointer;
+            background-color: none;
+            border: 0px solid #c8c8c8;
+            border-radius: 3px;
+            color: #c8c8c8;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+        }
+
+        div[data-toggle="buttons"] label:hover {
+            color: #813363;
+        }
+
+        div[data-toggle="buttons"] label:active,
+        div[data-toggle="buttons"] label.active {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+    </style>
+
+    <script>
+        function Page_href1() {
+            location.href = "recom10man.html";
+        }
+
+        function Page_href2() {
+            location.href = "recom10woman.html";
+        }
+
+        function Page_href3() {
+            location.href = "recom20man.html";
+        }
+
+        function Page_href4() {
+            location.href = "recom20woman.html";
+        }
+
+        function Page_href5() {
+            location.href = "recom25man.html";
+        }
+
+        function Page_href6() {
+            location.href = "recom25woman.html";
+        }
+
+        function Page_href7() {
+            location.href = "recom30man.html";
+        }
+
+        function Page_href8() {
+            location.href = "recom30woman.html";
+        }
+
+        function Page_href9() {
+            location.href = "recom35man.html";
+        }
+
+        function Page_href10() {
+            location.href = "recom35woman.html";
+        }
+
+
+        function Age() {
+
+            var age = document.getElementById("ages");
+
+            if (age.value >= 10 && age.value < 20 && document.getElementById('male').checked) {
+                alert("Recommended perfume for your most beautiful age of " + age.value);
+                Page_href1();
+            }
+
+            else if (age.value >= 10 && age.value < 20 && document.getElementById('female').checked) {
+
+                alert("Recommended perfume for your most beautiful age of " + age.value);
+                Page_href2();
+            }
+
+            else if (age.value >= 20 && age.value < 25 && document.getElementById('male').checked) {
+                alert("Recommended perfume for your most beautiful age of " + age.value);
+                Page_href3();
+            }
+
+            else if (age.value >= 20 && age.value < 25 && document.getElementById('female').checked) {
+
+                alert("Recommended perfume for your most beautiful age of " + age.value);
+                Page_href4();
+            }
+
+            else if (age.value >= 25 && age.value < 30 && document.getElementById('male').checked) {
+
+                alert("Recommended perfume for your most beautiful age of " + age.value);
+                Page_href5();
+            }
+
+            else if (age.value >= 25 && age.value < 30 && document.getElementById('female').checked) {
+
+                alert("Recommended perfume for your most beautiful age of " + age.value);
+                Page_href6();
+            }
+
+            else if (age.value >= 30 && age.value < 35 && document.getElementById('male').checked) {
+                alert("Recommended perfume for your most beautiful age of " + age.value);
+                Page_href7();
+            }
+
+            else if (age.value >= 30 && age.value < 35 && document.getElementById('female').checked) {
+                alert("Recommended perfume for your most beautiful age of " + age.value);
+                Page_href8();
+            }
+
+            else if (age.value >= 35 && document.getElementById('male').checked) {
+                alert("Recommended perfume for your most beautiful age of " + age.value);
+                Page_href9();
+            }
+
+            else if (age.value >= 35 && document.getElementById('female').checked) {
+                alert("Recommended perfume for your most beautiful age of " + age.value);
+                Page_href10();
+
+            }
+            else {
+                alert('enter your age');
+            }
+
+        }
+
+        // JavaScript for label effects only
+        $(window).load(function () {
+            $(".col-3 input").val("");
+
+            $(".input-effect input").focusout(function () {
+                if ($(this).val() != "") {
+                    $(this).addClass("has-content");
+                } else {
+                    $(this).removeClass("has-content");
+                }
+            })
+        });
+
+
+    </script>
+</head>
+
+<body>
+    <!-- 페이지 헤더 -->
+    <div id="top_div"></div>
+    <div class="container">
+        <div class="col-12 text-center">
+            <div class="page-header">
+                <h2 class="d-inline-block font-weight-bold">Perfuming</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- 메뉴 -->
+    <div class="nav-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MainNav"
+                            aria-controls="MainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="MainNav">
+                            <ul class="navbar-nav mx-auto navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Introduce</a>
+                                </li>
+                                <li class="dropdown nav-link">
+                                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true">Recommendation</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="age_recommend.html">Ages</a></li>
+                                        <li><a href="brand_recommend.html">Brand</a></li>
+                                        <li><a href="situation_recommend.html">Situation</a></li>
+                                        <li><a href="weather.html">Weather</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown nav-link">
+                                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true">My Perfume</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Material</a></li>
+                                        <li><a href="#">Perfume</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#company">Map</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section>
+        <div class="features-section">
+            <div class="row">
+                <div class="col-sm-6 offset-sm-4">
+                    <form action="" method="POST">
+                        <h4>Enter your gender</h4>
+                        <br>
+                        <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                            <label class="btn active">
+                                <input type="radio" name='gender1' id="male" value="male" checked><i
+                                    class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i> <span>
+                                    Male</span>
+                            </label>
+                            <label class="btn">
+                                <input type="radio" name='gender1' id="female" value="female"><i
+                                    class="fa fa-circle-o fa-2x"></i><i class="fa fa-dot-circle-o fa-2x"></i><span>
+                                    Female</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="col-sm-4 offset-sm-4">
+                    <input type="text" id="ages" required />
+                    <label for="ages">&nbsp;&nbsp;&nbsp;&nbsp;Enter your age</label>
+                    <span class="focus-border">
+                        <i></i>
+                    </span>
+                </div>
+                <button name="ok" onclick="Age();return false;">OK</button>
+                </form>
+            </div>
+        </div>
+
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+    </section>
+
+
+
+    <footer id="bottom_div">
+        <p class="text-center">Copyright (c) Sung-YuJung Jung-HeeJu</p>
+    </footer>
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script>
+        $(window).scroll(function () {
+            // Make sticky header
+            if ($(this).scrollTop() > 201) {
+                $(".nav-section").addClass("sticky");
+            } else {
+                $(".nav-section").removeClass("sticky");
+            }
+        });
+    </script>
+</body>
+
+</html>

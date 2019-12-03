@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    <script type="text/javascript" src="main.js"></script>
+    <!-- Theme Made By www.w3schools.com - No Copyright -->
+    <title>Beautiful Perfume</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- include jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <!-- include Cycle plugin -->
+    <script type="text/javascript" src="http://malsup.github.com/jquery.cycle.all.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="material/combination_css.css" />
+    <script type="text/javascript" src="perfume/combination_perfume_js.js"></script>
+    <script type="text/javascript" src="material/combination_js.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.9/c3.min.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.9/c3.min.js"></script>
+
+
+    <script src="js/plugins/bpopup/jquery.bpopup.min.js"></script>
+    <script src="perfume/test.js"></script>
+    <style>
+        #element_to_pop_up {
+            background-image: url('perfume/bul.gif');
+            box-shadow: 10px 10px 10px rgb(255, 192, 203);
+            border-radius: 15px;
+            color: #000;
+            display: none;
+            padding: 20px;
+            min-width: 500px;
+            min-height: 300px;
+            z-index: 9999;
+        }
+
+        .b-close {
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 5px;
+        }
+    </style>
+
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#myPage">
+                <p style="background:linear-gradient(135deg, #eb5bb4 0%, #f1f360 100%); font-family: Georgia;">
+                    &nbsp;perfuming&nbsp;
+                </p>
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav" style="float:right">
+                <li><a href="#myPage">HOME</a></li>
+                <li><a href="#introduce">INTRODUCE</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">RECOMMENDATION<span
+                            class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#recommend">AGE</a></li>
+                        <li><a href="#recommend1">BRAND</a></li>
+                        <li><a href="#recommend2">SITUATION</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">MY PERFUME<span class="caret"></span></a>
+                    <ul id=rec class="dropdown-menu">
+                        <li><a href="#myperfume" sytle="text-decoration:none">MATERIAL</a></li>
+                        <li><a href="#myperfume1" sytle="text-decoration:none">PERFUME</a></li>
+                    </ul>
+                </li>
+                <li><a href="#maps">MAP</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox" style="height:30%">
+            <img class="item active" src="main_img/img6.jpg" style="height:980px">
+            <img class="item" src="main_img/img1.jpg" style="height:980px">
+            <img class="item" src="main_img/img7.jpg" style="height:980px">
+            <img class="item" src="main_img/img9.jpg" style="height:980px">
+            <img class="item" src="main_img/img2.jpg" style="height:980px">
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+    <br />
+    <br />
+    <!--   (introudece)  -->
+    <div id="introduce" class="bg-1">
+        <div class=" " style="padding:50px">
+            <h2 class="text-center"><b>Introduce</b></h2>
+            <div class="row text-center">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">INTRO</a></li>
+                    <li><a data-toggle="tab" href="#menu1">Frag.G</a></li>
+                    <li><a data-toggle="tab" href="#menu2">NODE</a></li>
+                    <li><a data-toggle="tab" href="#menu3">PRICE-GRAPH</a></li>
+                </ul>
+
+                <div class="tab-content" style="text-align: center">
+                    <div style="background-color: white" id="home" class="tab-pane fade in active">
+                        <br />
+                        <h3 class="hcss"> This web page is about perfume. </h3>
+                        <p> <b style="color: black">step1&nbsp;</b> &nbsp;You will be able to recommend a fragrance to
+                            suit you.</p>
+                        <p> <b style="color: black">step2&nbsp;</b> &nbsp;If you want to make your own scent, it will
+                            help you.</p>
+                        <p> <b style="color: black">step3&nbsp;</b> &nbsp;It will recommend a place where you can make
+                            your own fragrance offline as well
+                            as online.</p>
+                        <p> If you are not familiar with perfume, see the fra.g page and the node page.</p>
+                        <br />
+                        <h4 class="hcss"> Developed by </h4>
+                        <br />
+                        <img src="introduce/page2img/yu.png" style="width:190px; height:172px; margin-bottom:20px" />
+                        <img src="introduce/page2img/hee.png" style="width:190px; height:179px; margin-bottom:20px" />
+                    </div>
+
+                    <div style="background-color: white" id="menu1" class="tab-pane fade" style="text-align: center">
+                        <br />
+                        <h3 class="hcss">Fragrance Concentration Guide</h3>
+
+                        <div id="chart"></div>
+
+
+                        <div>
+
+                            <img src="introduce/page2img/fragrance.JPG"
+                                style="margin-right: 25px; margin-bottom:20px;width:370px; height: 370px;" />
+                            <img src="introduce/page2img/perfume1_2_1.png" style="width:140px; height: 270px;" />
+                            <img src="introduce/page2img/perfume1_2_2.png" style="width:140px; height: 270px;" />
+                            <img src="introduce/page2img/perfume1_2_3.png" style="width:140px; height: 270px;" />
+                            <img src="introduce/page2img/perfume1_2_4.png" style="width:140px; height: 270px;" />
+
+                        </div>
+
+
+                        <script>
+                            var chart = c3.generate({
+                                data: {
+                                    columns: [
+                                        ['data', 4]
+                                    ],
+                                    type: 'gauge',
+                                    onclick: function (d, i) { console.log("onclick", d, i); },
+                                    onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+                                    onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+                                },
+
+                                color: {
+                                    pattern: ['rgb(164, 219, 252)', 'rgb(214, 252, 164)', 'rgb(255, 210, 151)', 'rgb(230, 196, 217)'],
+                                    threshold: {
+
+                                        values: [15, 20, 30]
+                                    }
+                                },
+                                size: {
+                                    height: 280
+
+                                }
+                            });
+                            setTimeout(function () {
+                                chart.load({
+                                    columns: [['data', 15]]
+                                });
+                            }, 2000);
+
+                            setTimeout(function () {
+                                chart.load({
+                                    columns: [['data', 20]]
+                                });
+                            }, 4000);
+
+                            setTimeout(function () {
+                                chart.load({
+                                    columns: [['data', 30]]
+                                });
+                            }, 6000);
+
+                        </script>
+                    </div>
+
+
+                    <div class="tab-pane fade, container" id="menu2" style="text-align: center">
+                        <br />
+                        <h3 class="hcss"> NodeList </h3>
+                        <img src="introduce/page2img/nodelist.jpeg" style="width:450px; height:300px" />
+                        <br />
+                        <br />
+                        <table class="tabless">
+                            <tr>
+                                <th style="text-align:center">
+                                    <h3 class="hcss">TOP_NODE</h3>
+                                </th>
+                                <td>
+                                    <br />
+                                    <p>is the fugitive scent of the perfume</p>
+                                    <p>which one has just put on the skin,</p>
+                                    <p>it elates a strong alcohol smell</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th style="text-align:center">
+                                    <h3 class="hcss">MIDDLE_NODE</h3>
+                                </th>
+                                <td><br />
+                                    <p>if the scent which emerges from</p>
+                                    <p>perfume 5 to 30 mn after the </p>
+                                    <p>application. This note is very often the</p>
+                                    <p>selection criterion of a perfume.</p>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th style="text-align:center">
+                                    <h3 class="hcss">BASE_NODE</h3>
+                                </th>
+                                <td><br />
+                                    <p>is the scent which mixed with the smell with the skin with the body.</p>
+                                    <p>It is a scent which is personal for you.</p>
+                                    <p>This note appears approximately 3 hours</p>
+                                    <p>after the application of the perfume.</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <br />
+                        <br />
+
+                    </div>
+                    <div style="background-color: white" id="menu3" class="tab-pane fade" style="text-align: center">
+                        <br />
+                        <h3 class="hcss">price graph</h3>
+
+                        <div style="margin-left:30%">
+                            <iframe src="d3.html" name="pageg" id="b" width="100%" height="590px" frameborder="0"
+                                marginwidth="0" marginheight="0">
+                            </iframe>
+                            
+                        </div>
+
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <!--   (age recommend)  -->
+        <div id="recommend" class="bg-1">
+            <div class=" " style="padding:50px">
+                <h2 class="text-center"><b>Age recommendation</b></h2>
+                <p class="text-center">We recommend perfume that is right for you. &nbsp; <span
+                        class="glyphicon glyphicon-gift"></span></p>
+
+
+                <div class="row text-center">
+                    <div class="col-sm-6">
+                        <div class="thumbnail" style="padding:150px; height:640px">
+                            <h3><span class="glyphicon glyphicon-check"></span><strong>&nbsp;Choose your gender</strong>
+                            </h3>
+                            <form action="" method="POST">
+                                <div class="btn-group btn-group-vertical" data-toggle="buttons">
+                                    <label class="btn active">
+                                        <input type="radio" name='gender1' id="male" style="display:none;" value="male"
+                                            checked><i class="fa fa-circle-o fa-2x"></i><i
+                                            class="fa fa-dot-circle-o fa-2x"></i> <span class="glyphicon glyphicon-ok">
+                                            Male</span>
+                                    </label>
+                                    <label class="btn">
+                                        <input type="radio" name='gender1' id="female" style="display:none;"
+                                            value="female"><i class="fa fa-circle-o fa-2x"></i><i
+                                            class="fa fa-dot-circle-o fa-2x"></i><span class="glyphicon glyphicon-ok">
+                                            Female</span>
+                                    </label>
+                                </div>
+                            </form>
+                            <hr />
+                            <h3><span class="glyphicon glyphicon-edit"></span><strong>&nbsp;Enter your age</strong></h3>
+                            <div style="width:200px; margin:auto">
+                                <input type="text" id="ages" required style="text-align:center" />
+                            </div>
+                            </span>
+                            <br />
+                            <button class="btn1" data-toggle="modal" data-target="#myModal"
+                                onclick="Age();return false;">OK</button>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6" style="box-shadow: 5px 5px 5px 5px gray;">
+                        <div class="thumbnail" style="padding:14px">
+                            <iframe src="age/page.html" name="page" id="b" width="100%" height="590px" frameborder="0"
+                                marginwidth="0" marginheight="0">
+
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--   (brand recommend)  -->
+        <div id="recommend1" class="bg-1">
+            <div class=" " style="padding:50px">
+                <h2 class="text-center"><b>Brand recommendation</b></h2>
+                <p class="text-center">We recommend perfume that is right for you. &nbsp; <span
+                        class="glyphicon glyphicon-gift"></span></p>
+
+
+                <div class="row text-center">
+                    <div class="col-sm-6">
+                        <div class="thumbnail" style="padding:10px">
+                            <div class="row text-center" style="padding:20px">
+                                <br />
+                                <h3><strong>Choose the brand you
+                                        want&nbsp;<span class="glyphicon glyphicon-hand-up"></span></strong></h3>
+                                <br />
+                                <br />
+
+                                <hr />
+                                <div class="col-sm-4 offset-sm-1">
+                                    <a href="brand/ferrari1.html" target="page2"><img class="bounce_button brand-image"
+                                            src="brand/brand_img/1.jpg" />
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="brand/burberry1.html" target="page2"><img class="bounce_button brand-image"
+                                            src="brand/brand_img/2.jpg" />
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="brand/dior1.html" target="page2"><img class="bounce_button brand-image"
+                                            src="brand/brand_img/3.jpg" /> </a>
+                                </div>
+                            </div>
+                            <div class="row text-center" style="padding:20px">
+                                <div class="col-sm-4 offset-sm-1">
+                                    <a href="brand/chanel1.html" target="page2"><img class="bounce_button brand-image"
+                                            src="brand/brand_img/4.jpg" />
+                                    </a>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="brand/jomalon.html" target="page2"><img class="bounce_button brand-image"
+                                            src="brand/brand_img/5.jpg" /></a>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="brand/lancome.html" target="page2"><img class="bounce_button brand-image"
+                                            src="brand/brand_img/6.jpg" /> </a>
+                                </div>
+                            </div>
+                            <div class="row text-center" style="padding:20px">
+                                <div class="col-sm-4 offset-sm-1">
+                                    <a href="brand/jimmychoo.html" target="page2" target="page2"><img
+                                            class="bounce_button brand-image" src="brand/brand_img/7.jpg" />
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="brand/annasui.html" target="page2"><img class="bounce_button brand-image"
+                                            src="brand/brand_img/8.jpg" />
+                                    </a>
+                                </div>
+                                <div class="col-sm-4">
+                                    <a href="brand/montblanc.html" target="page2"><img class="bounce_button brand-image"
+                                            src="brand/brand_img/9.jpg" /> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6" style="box-shadow: 5px 5px 5px 5px gray;">
+                        <div class="thumbnail" style="padding:14px">
+                            <iframe src="brand/page.html" name="page2" id="c" width="100%" height="860px"
+                                frameborder="0" marginwidth="0" marginheight="0">
+
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--   (situation recommend)  -->
+        <div id="recommend2" class="bg-1">
+            <div class=" " style="padding:50px">
+                <h2 class="text-center"><b>Situation recommendation</b></h2>
+                <p class="text-center">We recommend perfume that is right for you. &nbsp; <span
+                        class="glyphicon glyphicon-gift"></span></p>
+
+                <div class="row text-center">
+                    <div class="col-sm-6">
+                        <div class="thumbnail" style="padding:14px">
+                            <div class="row text-center" style="padding:14xpx; padding-left: 14px; padding-right:14px">
+                                <h3><span class="glyphicon glyphicon-music"></span><strong>&nbsp; &nbsp; We'd like to be
+                                        recommended the scent</strong></h3>
+                                <div>
+                                    <a href="situation/sit1.html" target="page3"><button id="snip15351">that soothes me
+                                            after my
+                                            business
+                                            meeting.</button></a>
+                                    <hr />
+                                    <a href="situation/sit3.html" target="page3"><button id="snip15353">for healing now
+                                            Sunday
+                                            evening.</button></a>
+                                    <hr />
+                                    <a href="situation/sit2.html" target="page3"><button id="snip15352">for a burning
+                                            Friday.</button></a>
+                                    <hr />
+                                    <a href="situation/sit4.html" target="page3"><button id="snip15354">that is
+                                            encouraging
+                                            the
+                                            beginning of the
+                                            week.</button></a>
+                                    <hr />
+                                    <a href="situation/sit5.html" target="page3"><button id="snip15355">of the time when
+                                            I'm
+                                            about to
+                                            go on a
+                                            date.</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6" style="box-shadow: 5px 5px 5px 5px gray;">
+                        <div class="thumbnail" style="padding:20px">
+                            <iframe src="situation/page.html" name="page3" id="d" width="100%" height="590px"
+                                frameborder="0" marginwidth="0" marginheight="0">
+
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+
+        <!--   (material) -->
+        <div id="myperfume" class="bg-1">
+            <div class=" " style="padding:50px">
+                <h2 class="text-center"><b>Create your own perfume with material.</b></h2>
+                <p class="text-center">We will help you make your own perfume.&nbsp; <span
+                        class="glyphicon glyphicon-gift"></span></p>
+                <div class="row text-center" style="width:100%">
+
+
+                    <table class="tables row text-center" style="width:100%">
+                        <tr>
+                            <td>
+                                <div id="flower" class="col-12 text-center" ondrop="drop_out(this, event);"
+                                    ondragenter="return false;" ondragover="return false;">
+                                    <h3>FLORAL</h3>
+                                    <script>
+                                        for (var i = 1; i < 19; i++) {
+
+                                            document.write('<img src="material/img/Floral/mat' + i + '.png" alt=" " draggable="true" id="makes' + (18 + i) + '"ondragstart="drag(this, event)" />')
+                                        }
+                                    </script>
+                                </div>
+
+                                <div id="fruit" class="col-12 text-center" ondrop="drop_out(this, event);"
+                                    ondragenter="return false;" ondragover="return false;">
+                                    <h3>FRUITY</h3>
+                                    <script>
+                                        for (var i = 1; i < 19; i++) {
+
+                                            document.write('<img src="material/img/Fruity/mat' + i + '.png" alt=" " draggable="true" id="makes' + (36 + i) + '"ondragstart="drag(this, event)" />')
+                                        }
+                                    </script>
+                                </div>
+
+                                <div id="other" class="col-12 text-center" ondrop="drop_out(this, event);"
+                                    ondragenter="return false;" ondragover="return false;">
+                                    <h3>OTHER</h3>
+                                    <script>
+                                        for (var i = 1; i < 14; i++) {
+
+                                            document.write('<img src="material/img/Other/mat' + i + '.png" alt=" " draggable="true" id="makes' + (54 + i) + '"ondragstart="drag(this, event)" />')
+                                        }
+                                    </script>
+                                </div>
+
+                            </td>
+                            <td>
+                                <img id="next" src="material/img/next11.png" />
+                            </td>
+                            <td>
+                                <div id="makes" class="col-12 text-center">
+                                    <img id="image" src="material/img/cologne.png" style="width:550px; height:800px;" />
+                                    <div id="make_main" ondrop="drop_in(this, event);" ondragenter="return false;"
+                                        ondragover="return false;">
+                                        <h3>DRAG HERE</h3>
+                                    </div>
+
+                                </div>
+                                <button name="ok" value="ok" class="btn1" data-toggle="modal" data-target="#myModal"
+                                    onclick="changeimage('myTable')">OK</button>
+
+                                <br />
+                                <br />
+
+                            </td>
+                        </tr>
+                    </table>
+
+
+                    <table id="table_hide" border="0">
+                        <tr>
+                            <td>
+                                <br />
+                                <br />
+
+
+                            </td>
+                        </tr>
+                    </table>
+
+
+                    <table id="myTable">
+                        <tbody>
+                            <tr>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <!--   (perfume) -->
+        <div id="myperfume1" class="bg-1">
+            <div class=" " style="padding:3%">
+                <h2 class="text-center"><b>Create your own perfume with perfume.</b></h2>
+                <p class="text-center">We will help you make your own perfume.&nbsp; <span
+                        class="glyphicon glyphicon-gift"></span></p>
+                <div class="row text-center" style="margin: auto">
+                    <table style="margin: auto" class="tables row text-center" style="width:100%">
+                        <tr>
+                        <tr>
+                            <td>
+                                <div id="perfume" ondrop="drop(this, event);" ondragenter="return false;"
+                                    ondragover="return false;">
+                                    <h3>Light_Perfum_UNISEX_</h3>
+                                    <script>
+                                        for (var i = 1; i < 6; i++) {
+
+                                            document.write('<img src="perfume/light_perfume/perfume_unisex/uni' + i + '.jpg" alt=" " draggable="true" id="make' + i + '"ondragstart="drag(this, event)" />')
+                                        }
+                                    </script>
+
+                                </div>
+                            </td>
+                            <td rowspan="3">
+                                <div id="make">
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <br />
+                                    <img id="images" src="perfume/cologne.png" style="width:530px; height:880px;" />
+                                    <div id="make_mains" class="fl" ondrop="drop(this, event);"
+                                        ondragenter="return false;" ondragover="return false;">
+                                        <h3>LIGHT_PERFUME DRAG HERE</h3>
+                                    </div>
+                                    <div id="make_main2" class="fl" ondrop="drop(this, event);"
+                                        ondragenter="return false;" ondragover="return false;">
+                                        <h3>HARD_PERFUME DRAG HERE</h3>
+                                    </div>
+                                </div>
+                                <br />
+
+                                <button name="ok" value="ok" id="my-button" class="btn1" data-toggle="modal"
+                                    data-target="#myModal" onclick="changeimages()">OK</button>
+                            </td>
+                            <td>
+                                <div id="perfume" ondrop="drop(this, event);" ondragenter="return false;"
+                                    ondragover="return false;">
+                                    <h3>Hard_Perfum_UNISEX_</h3>
+                                    <script>
+                                        for (var i = 1; i < 6; i++) {
+                                            document.write('<img src="perfume/hard_perfume/unisex/uni' + i + '.jpg" alt=" " draggable="true" id="make1' + i + '"ondragstart="drag(this, event)" />')
+                                        }
+                                    </script>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="perfume" ondrop="drop(this, event);" ondragenter="return false;"
+                                    ondragover="return false;">
+                                    <h3>Light_Perfum_WOMEN_</h3>
+                                    <script>
+                                        for (var i = 1; i < 9; i++) {
+
+                                            document.write('<img src="perfume/light_perfume/perfume_women/women' + i + '.jpg" alt=" " draggable="true" id="make2' + i + '"ondragstart="drag(this, event)" />')
+                                        }
+                                    </script>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div id="perfume" ondrop="drop(this, event);" ondragenter="return false;"
+                                    ondragover="return false;">
+                                    <h3>Hard_Perfum_WOMEN_</h3>
+                                    <script>
+                                        for (var i = 1; i < 12; i++) {
+
+                                            document.write('<img src="perfume/hard_perfume/women/women' + i + '.png" alt=" " draggable="true" id="make3' + i + '"ondragstart="drag(this, event)" />')
+                                        }
+                                    </script>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td>
+                                <div id="perfume" ondrop="drop(this, event);" ondragenter="return false;"
+                                    ondragover="return false;">
+                                    <h3>Light_Perfum_MEN_</h3>
+                                    <script>
+                                        for (var i = 1; i < 9; i++) {
+
+                                            document.write('<img src="perfume/light_perfume/perfume_men/men' + i + '.jpg" alt=" " draggable="true" id="make4' + i + '"ondragstart="drag(this, event)" />')
+                                        }
+                                    </script>
+
+                                </div>
+                            </td>
+
+                            <td>
+                                <div id="perfume" ondrop="drop(this, event);" ondragenter="return false;"
+                                    ondragover="return false;">
+                                    <h3>Hard_Perfum_MEN_</h3>
+
+                                    <script>
+                                        for (var i = 1; i < 11; i++) {
+
+                                            document.write('<img src="perfume/hard_perfume/men/men' + i + '.png" alt=" " draggable="true" id="make5' + i + '"ondragstart="drag(this, event)" />')
+                                        }
+                                    </script>
+
+                                </div>
+                            </td>
+
+                        </tr>
+                    </table>
+
+                    <body>
+
+                        <!-- Element to pop up -->
+                        <div id="element_to_pop_up">
+                            <a class="b-close">x</a>
+                            <img src="perfume/com.png" style="text-align: center; width:500px; height: 300px;" />
+                        </div>
+
+                    </body>
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <br />
+        <br />
+
+
+
+
+
+
+        <!--   (map) -->
+        <div id="maps" class="bg-1">
+            <div class=" " style="padding:50px">
+                <h2 class="text-center"><b>Map</b></h2>
+                <p class="text-center">We'll recommend a place where you can make perfume yourself.&nbsp; <span
+                        class="glyphicon glyphicon-gift"></span></p>
+                <div class="row text-center">
+
+                    <div class="thumbnail" style="padding:20px">
+
+                        <div id="map" class="row text-center" style="margin:auto">
+
+                            <script>
+                                var map;
+                                function initMap() {
+                                    map = new google.maps.Map(document.getElementById('map'), {
+                                        zoom: 13,
+                                        center: new google.maps.LatLng(36.6361016, 127.4692273),
+                                        mapTypeId: 'roadmap'
+                                    });
+
+                                    var script = document.createElement('script');
+                                    script.src = 'googlemap/where_map.js';
+                                    document.getElementsByTagName('head')[0].appendChild(script);
+                                }
+
+                                window.where_callback = function (results) {
+                                    {
+                                        var coords = results.features[0].geometry.coordinates;
+                                        var latLng = new google.maps.LatLng(coords[0], coords[1]);
+                                        var marker = new google.maps.Marker({
+                                            position: latLng,
+                                            animation: google.maps.Animation.BOUNCE,
+                                            icon: 'googlemap/beauty.png',
+                                            map: map
+                                        });
+                                    }
+
+
+                                    {
+                                        var coords = results.features[1].geometry.coordinates;
+                                        var latLng = new google.maps.LatLng(coords[0], coords[1]);
+                                        var marker = new google.maps.Marker({
+                                            position: latLng,
+                                            animation: google.maps.Animation.BOUNCE,
+                                            icon: 'googlemap/beauty (1).png',
+                                            map: map
+                                        });
+
+                                    }
+
+                                    {
+                                        var coords = results.features[2].geometry.coordinates;
+
+                                        var latLng = new google.maps.LatLng(coords[0], coords[1]);
+                                        var marker = new google.maps.Marker({
+                                            position: latLng,
+                                            animation: google.maps.Animation.BOUNCE,
+                                            icon: 'googlemap/beauty (2).png',
+                                            map: map
+                                        });
+
+                                    }
+
+
+                                    {
+
+                                        var coords = results.features[3].geometry.coordinates;
+
+                                        var latLng = new google.maps.LatLng(coords[0], coords[1]);
+                                        var marker = new google.maps.Marker({
+                                            position: latLng,
+                                            animation: google.maps.Animation.BOUNCE,
+                                            icon: 'googlemap/beauty (3).png',
+                                            map: map
+                                        });
+
+                                    }
+                                    {
+
+
+                                        var coords = results.features[4].geometry.coordinates;
+
+                                        var latLng = new google.maps.LatLng(coords[0], coords[1]);
+                                        var marker = new google.maps.Marker({
+                                            position: latLng,
+                                            animation: google.maps.Animation.BOUNCE,
+                                            icon: 'googlemap/beauty(4).png',
+                                            map: map
+                                        });
+
+                                    }
+                                    {
+
+                                        var coords = results.features[5].geometry.coordinates;
+
+                                        var latLng = new google.maps.LatLng(coords[0], coords[1]);
+                                        var marker = new google.maps.Marker({
+                                            position: latLng,
+
+                                            icon: 'googlemap/people.png',
+                                            map: map
+                                        });
+
+                                    }
+                                }
+
+
+                            </script>
+                            <script
+                                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAlOjojzJqN5CEy7iGWtTTiWgCMiPUhXI&callback=initMap"></script>
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-sm-6">
+                                <table style="float:right">
+
+                                    <tr>
+                                        <td> <img src="googlemap/beauty.png" class="perfumeimg" /></td>
+                                        <td></td>
+                                        <td>
+                                            <h3><span class="glyphicon glyphicon-map-marker"></span>&nbsp;
+                                                hyang-ginaneungeugos</h3>
+                                            <p> number :010-9428-3576 <br />
+                                                addess :<br />
+                                                chungbug cheongjusi sangdang-gu suamlo54beongil 8<br />
+                                                blog :<br />
+                                                <a class="qq"
+                                                    href="http://blog.naver.com/perfumeplace">http://blog.naver.com/perfumeplace</a><br />
+                                                Please make a reservation.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-sm-6 ">
+                                <table>
+
+                                    <tr>
+                                        <td> <img src="googlemap/beauty (1).png" class="perfumeimg" /></td>
+                                        <td></td>
+                                        <td>
+                                            <h3><span class="glyphicon glyphicon-map-marker"></span>&nbsp;piuda</h3>
+                                            <p> number :010-3400-6812<br />
+                                                addess : <br />chungbug cheongjusi seowongu sajigdaelo89beongil 16<br />
+                                                blog :<br /> <a class="qq"
+                                                    href="http://blog.naver.com/jmz1038">http://blog.naver.com/jmz1038</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="row text-center">
+
+                            <div class="col-sm-4" style="margin:auto">
+                                <table>
+                                    <tr>
+                                        <td> <img src="googlemap/beauty (2).png" class="perfumeimg" /></td>
+                                        <td></td>
+                                        <td>
+                                            <h3><span class="glyphicon glyphicon-map-marker"></span>&nbsp;kkeullim </h3>
+                                            <p> number :010-8217-9632<br />
+                                                addess :<br />
+                                                chungbug cheongjusi heungdeoggu jimdaelo50beongil 17<br />
+                                                insta :<br /><a class="qq"
+                                                    href="https://www.instagram.com/cclim00/">https://www.instagram.com/cclim00/</a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-sm-4" style="margin:auto">
+                                <table>
+                                    <tr>
+                                        <td> <img src="googlemap/beauty (3).png" class="perfumeimg" /></td>
+                                        <td></td>
+                                        <td>
+                                            <h3><span class="glyphicon glyphicon-map-marker"></span>&nbsp;goodbam</h3>
+                                            <p>number : 070-8713-0014<br />
+                                                addess : <br />
+                                                chungbug cheongjusi sangdang-gu sangdanglo91beongil 39-1
+                                                taewangpeulaja<br />
+                                                home page:<br /> <a class="qq" href="http://www.good-bam.net/">
+                                                    http://www.good-bam.net/ </a>
+                                                <br />
+                                                Please make a reservation.</p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-sm-4" style="margin:auto">
+                                <table>
+                                    <tr>
+                                        <td> <img src="googlemap/beauty(4).png" class="perfumeimg" /></td>
+                                        <td></td>
+                                        <td>
+                                            <h3><span class="glyphicon glyphicon-map-marker"></span>&nbsp;Esencia Casa
+                                            </h3>
+                                            <p>number :070-4226-1481<br />
+                                                addess : <br />
+                                                2nd Floor, 342 Guryongsan Road, Seowon District, Cheongju City,
+                                                Chungbuk<br />
+                                                home page:<br /> <a class="qq" href="https://esenciacasa.modoo.at">
+                                                    https://esenciacasa.modoo.at </a>
+                                            </p>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <br />
+        <br />
+
+
+        <!-- Footer -->
+        <footer class="text-center">
+            <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+                <span class="glyphicon glyphicon-triangle-top"></span>
+            </a><br><br>
+            <div class=" text-center">
+                <p><span class="glyphicon glyphicon-user"></span>&nbsp; made by)&nbsp; &nbsp; SungYuJeong &nbsp;
+                    &nbsp;
+                    |
+                    &nbsp; &nbsp;
+                    JeongHeeJoo</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> &nbsp;contact)&nbsp; &nbsp;
+                    dbwjd2236@naver.com &nbsp; &nbsp; | &nbsp; &nbsp; gmlwn5470@naver.com</p>
+
+                <p>Copyright (c) 2019 SungYu-Jeong-HeeJoo</p>
+            </div>
+        </footer>
+
+        <script>
+            $(document).ready(function () {
+                // Initialize Tooltip
+                $('[data-toggle="tooltip"]').tooltip();
+
+                // Add smooth scrolling to all links in navbar + footer link
+                $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+
+                        // Prevent default anchor click behavior
+                        event.preventDefault();
+
+                        // Store hash
+                        var hash = this.hash;
+
+                        // Using jQuery's animate() method to add smooth page scroll
+                        // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function () {
+
+                            // Add hash (#) to URL when done scrolling (default click behavior)
+                            window.location.hash = hash;
+                        });
+                    } // End if
+                });
+            })
+
+
+
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type"text/css" rel="stylesheet" href="main.css" />
+    <style>
+        #map {
+            height: 400px;
+            width: 800px;
+        }
+.qq{color:black;}
+        .qq:hover{
+            color: rgb(224, 170, 204);
+            text-decoration: none;
+
+        }
+        .qq:visited{ 
+            color :rgb(201, 123, 171);
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header style="z-index:999;width:100%;margin-bottom:0px; background-color:white">
+        <div id="top_div" style="margin-top:7px">
+        </div>
+        <br />
+        <br />
+        <br />
+        <h1>Perfuming</h1>
+
+
+        <ul>
+            <li><a href="">Introduce</a></li>
+            <li><a href="">Recommendation</a>
+                <ul>
+                    <li><a href="#">Ages</a></li>
+                    <li><a href="#">Brands</a></li>
+                    <li><a href="#">Situations</a></li>
+                    <li><a href="#">Incense</a></li>
+
+                </ul>
+            </li>
+            <li><a href="">My Perfume</a>
+                <ul>
+                    <li><a href="#">Material</a></li>
+                    <li><a href="#">Perfume</a></li>
+
+                </ul>
+            </li>
+            <li><a href="">Map</a></li>
+        </ul>
+
+
+
+
+        <hr />
+
+    </header>
+    <br />
+    <h2 style="text-align:center">
+            Let's go make perfume.</h2>
+    <br />
+    <br />
+    <div style="margin: auto;">
+        <div style="margin: auto; float: left; padding: 25px; margin: 7%" id="map">
+
+            <script>
+                var map;
+                function initMap() {
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 13,
+                        center: new google.maps.LatLng(36.6361016, 127.4692273),
+                        mapTypeId: 'roadmap'
+                    });
+
+                    var script = document.createElement('script');
+                    script.src = 'where_map.js';
+                    document.getElementsByTagName('head')[0].appendChild(script);
+                }
+
+                window.where_callback = function (results) {
+                    {
+                        var coords = results.features[0].geometry.coordinates;
+                        var latLng = new google.maps.LatLng(coords[0], coords[1]);
+                        var marker = new google.maps.Marker({
+                            position: latLng,
+                            animation: google.maps.Animation.BOUNCE,
+                            icon: 'beauty.png',
+                            map: map
+                        });
+                    }
+
+
+                    {
+                        var coords = results.features[1].geometry.coordinates;
+                        var latLng = new google.maps.LatLng(coords[0], coords[1]);
+                        var marker = new google.maps.Marker({
+                            position: latLng,
+                            animation: google.maps.Animation.BOUNCE,
+                            icon: 'beauty (1).png',
+                            map: map
+                        });
+
+                    }
+
+                    {
+                        var coords = results.features[2].geometry.coordinates;
+
+                        var latLng = new google.maps.LatLng(coords[0], coords[1]);
+                        var marker = new google.maps.Marker({
+                            position: latLng,
+                            animation: google.maps.Animation.BOUNCE,
+                            icon: 'beauty (2).png',
+                            map: map
+                        });
+
+                    }
+
+
+                    {
+
+                        var coords = results.features[3].geometry.coordinates;
+
+                        var latLng = new google.maps.LatLng(coords[0], coords[1]);
+                        var marker = new google.maps.Marker({
+                            position: latLng,
+                            animation: google.maps.Animation.BOUNCE,
+                            icon: 'beauty (3).png',
+                            map: map
+                        });
+
+                    }
+                    {
+
+
+                        var coords = results.features[4].geometry.coordinates;
+
+                        var latLng = new google.maps.LatLng(coords[0], coords[1]);
+                        var marker = new google.maps.Marker({
+                            position: latLng,
+                            animation: google.maps.Animation.BOUNCE,
+                            icon: 'beauty(4).png',
+                            map: map
+                        });
+
+                    }
+                }
+
+
+            </script>
+            <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAlOjojzJqN5CEy7iGWtTTiWgCMiPUhXI&callback=initMap"></script>
+        </div>
+        <div>
+            <table>
+
+                <tr>
+                    <td> <img src="beauty.png" /></td>
+                    <td></td>
+                    <td>
+                        <h4> hyang-ginaneungeugos</h4>
+                        <p> number :010-9428-3576 <br />
+                            addess :<br />
+                            chungbug cheongjusi sangdang-gu suamlo54beongil 8<br />
+                            blog :<br />
+                            <a class="qq" href="http://blog.naver.com/perfumeplace">http://blog.naver.com/perfumeplace</a><br />
+                            Please make a reservation.</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <img src="beauty (1).png" /></td>
+                    <td></td>
+                    <td>
+                        <h4>piuda</h4>
+                        <p> number :010-3400-6812<br />
+                            addess : <br />chungbug cheongjusi seowongu sajigdaelo89beongil 16<br />
+                            blog :<br /> <a class="qq" href="http://blog.naver.com/jmz1038">http://blog.naver.com/jmz1038</a></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <img src="beauty (2).png" /></td>
+                    <td></td>
+                    <td>
+
+                        <h4>kkeullim </h4>
+                        <p> number :010-8217-9632<br />
+                            addess :<br />
+                            chungbug cheongjusi heungdeoggu jimdaelo50beongil 17<br />
+                            insta :<br /><a class="qq"
+                                href="https://www.instagram.com/cclim00/">https://www.instagram.com/cclim00/</a></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <img src="beauty (3).png" /></td>
+                    <td></td>
+                    <td>
+
+                        <h4>goodbam</h4>
+                        <p>number : 070-8713-0014<br />
+                            addess : <br />
+                            chungbug cheongjusi sangdang-gu sangdanglo91beongil 39-1 taewangpeulaja<br />
+                            home page:<br /> <a class="qq" href="http://www.good-bam.net/"> http://www.good-bam.net/ </a>
+                            <br />
+                            Please make a reservation.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td> <img src="beauty(4).png" /></td>
+                    <td style="padding: 13px;"></td>
+                    <td>
+
+
+                        <h4> Esencia Casa</h4>
+                        <p>number :070-4226-1481<br />
+                            addess : <br />
+                            2nd Floor, 342 Guryongsan Road, Seowon District, Cheongju City, Chungbuk<br />
+                            home page :<br />
+                            <a class="qq" href="https://esenciacasa.modoo.at">https://esenciacasa.modoo.at</a></p>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

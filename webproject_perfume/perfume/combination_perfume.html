@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<title>롭</title>
+	<link type"text/css" rel="stylesheet" href="main.css" />
+	<link type"text/css" rel="stylesheet" href="combination_perfume_css.css" />
+	<script type="text/javascript" src="combination_perfume_js.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/plugins/bpopup/jquery.bpopup.min.js"></script> <!-- 비팝업 js 가져오기 -->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<!-- 이 팝업을 사용하기 위한 자바스크립트 버젼 -->
+	<script src="test.js"></script>
+
+	<style>
+		#element_to_pop_up {
+			background-image: url('bul.gif');
+			box-shadow: 10px 10px 10px rgb(255, 192, 203);
+			border-radius: 15px;
+			color: #000;
+			display: none;
+			padding: 20px;
+			min-width: 500px;
+			min-height: 300px;
+			z-index: 9999;
+		}
+
+		.b-close {
+			cursor: pointer;
+			position: absolute;
+			right: 10px;
+			top: 5px;
+		}
+	</style>
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+	<table class="tables">
+		<tr>
+			<td>
+				<div id="perfume" ondrop="drop(this, event);" ondragenter="return false;" ondragover="return false;">
+					<h2>Light_Perfum_UNISEX_</h2>
+					<script>
+						for (var i = 1; i < 6; i++) {
+
+							document.write('<img src="perfume/light_perfume/perfume_unisex/uni' + i + '.jpg" alt=" " draggable="true" id="makes' + i + '"ondragstart="drag(this, event)" />')
+						}
+					</script>
+
+				</div>
+			</td>
+			<td rowspan="3">
+				<div id="makes">
+					<br />
+					<br />
+					<br />
+					<br />
+					<img id="images" src="perfume/cologne.png" style="width:600px; height:880px;" />
+					<div id="make_mains" class="fl" ondrop="drop(this, event);" ondragenter="return false;"
+						ondragover="return false;">
+						<h2>LIGHT_PERFUME DRAG HERE</h2>
+					</div>
+					<div id="make_main2" class="fl" ondrop="drop(this, event);" ondragenter="return false;"
+						ondragover="return false;">
+						<h2>HARD_PERFUME DRAG HERE</h2>
+					</div>
+				</div>
+				<button name="ok" value="ok" id="my-button" class="btn1" data-toggle="modal" data-target="#myModal"
+				onclick="changeimages()">OK</button>
+			</td>
+			<td>
+				<div id="perfume" ondrop="drop(this, event);" ondragenter="return false;" ondragover="return false;">
+					<h2>Hard_Perfum_UNISEX_</h2>
+					<script>
+						for (var i = 1; i < 6; i++) {
+							document.write('<img src="perfume/hard_perfume/unisex/uni' + i + '.jpg" alt=" " draggable="true" id="make1' + i + '"ondragstart="drag(this, event)" />')
+						}
+					</script>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="perfume" ondrop="drop(this, event);" ondragenter="return false;" ondragover="return false;">
+					<h2>Light_Perfum_WOMEN_</h2>
+					<script>
+						for (var i = 1; i < 9; i++) {
+
+							document.write('<img src="perfume/light_perfume/perfume_women/women' + i + '.jpg" alt=" " draggable="true" id="make2' + i + '"ondragstart="drag(this, event)" />')
+						}
+					</script>
+				</div>
+			</td>
+
+			<td>
+				<div id="perfume" ondrop="drop(this, event);" ondragenter="return false;" ondragover="return false;">
+					<h2>Hard_Perfum_WOMEN_</h2>
+					<script>
+						for (var i = 1; i < 12; i++) {
+
+							document.write('<img src="perfume/hard_perfume/women/women' + i + '.png" alt=" " draggable="true" id="make3' + i + '"ondragstart="drag(this, event)" />')
+						}
+					</script>
+				</div>
+			</td>
+
+		</tr>
+		<tr>
+			<td>
+				<div id="perfume" ondrop="drop(this, event);" ondragenter="return false;" ondragover="return false;">
+					<h2>Light_Perfum_MEN_</h2>
+					<script>
+						for (var i = 1; i < 9; i++) {
+
+							document.write('<img src="perfume/light_perfume/perfume_men/men' + i + '.jpg" alt=" " draggable="true" id="make4' + i + '"ondragstart="drag(this, event)" />')
+						}
+					</script>
+
+				</div>
+			</td>
+
+			<td>
+				<div id="perfume" ondrop="drop(this, event);" ondragenter="return false;" ondragover="return false;">
+					<h2>Hard_Perfum_MEN_</h2>
+
+					<script>
+						for (var i = 1; i < 11; i++) {
+
+							document.write('<img src="perfume/hard_perfume/men/men' + i + '.png" alt=" " draggable="true" id="make5' + i + '"ondragstart="drag(this, event)" />')
+						}
+					</script>
+
+				</div>
+			</td>
+
+		</tr>
+	</table>
+
+	<body>
+
+		<!-- Element to pop up -->
+		<div id="element_to_pop_up">
+			<a class="b-close">x</a>
+			<img src="perfume/com.png" style="text-align: center; width:500px; height: 300px;"/>
+		</div>
+
+	</body>
+
+</html>

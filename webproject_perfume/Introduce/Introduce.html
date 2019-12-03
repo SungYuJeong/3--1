@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<link type="text/css" rel="stylesheet" href="Introduce_css.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.9/c3.min.css" rel="stylesheet" type="text/css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.9/c3.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<style>
+		.hcss{
+			margin: 10px 0 30px 0;
+			letter-spacing: 5px;
+			font-size: 20px;
+			color: #111;
+		}
+
+		.tabless {
+			margin: auto;
+			width: 800px;
+		
+		}
+	
+		#menu2{
+			border:rgb(236, 215, 176) solid 3px;
+			border-radius: 25px ;
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+	</style>
+</head>
+
+<body>
+
+
+	<ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#home">INTRO</a></li>
+		<li><a data-toggle="tab" href="#menu1">Frag.G</a></li>
+		<li><a data-toggle="tab" href="#menu2">NODE</a></li>
+
+	</ul>
+
+	<div class="tab-content" style="text-align: center">
+		<div id="home" class="tab-pane fade in active">
+		   <h1>Introduce</h1>
+		   <br />
+		   <h3 class="hcss"> This project is about perfume. </h3>
+		   <p> <b>step1</b> You will be able to recommend a fragrance to suit you.</p>
+		   <p> <b>step2</b> If you want to make your own scent, it will help you.</p>
+		   <p> <b>step3</b> It will recommend a place where you can make your own fragrance offline as well as online.</p>
+		   <p> If you are not familiar with perfume, see the fra.g page and the node page.</p>
+		   <br />
+		   <h4 class="hcss"> Developed by </h4>
+		   <br />
+		   <img src="introduce/page2img/yu.png" style="width:200px; height:200px"/>
+		   <img src="introduce/page2img/hee.png" style="width:200px; height:200px"/>
+		</div>
+
+		<div id="menu1" class="tab-pane fade" style="text-align: center">
+			<br />
+			<h3 class="hcss">Fragrance Concentration Guide</h3>
+			<br />
+			<div id="chart"></div>
+			
+			
+
+			<p> </p>
+
+			<div>
+
+				<img src="introduce/page2img/fragrance.JPG" style="margin-right: 25px; height: 370px;"/>
+				<img src="introduce/page2img/perfume1_2_1.png" />
+				<img src="introduce/page2img/perfume1_2_2.png" />
+				<img src="introduce/page2img/perfume1_2_3.png" />
+				<img src="introduce/page2img/perfume1_2_4.png" />
+
+			</div>
+
+			<script>
+				var chart = c3.generate({
+					data: {
+						columns: [
+							['data', 4]
+						],
+						type: 'gauge',
+						onclick: function (d, i) { console.log("onclick", d, i); },
+						onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+						onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+					},
+
+					color: {
+						pattern: ['rgb(164, 219, 252)', 'rgb(214, 252, 164)', 'rgb(255, 210, 151)', 'rgb(230, 196, 217)'],
+						threshold: {
+
+							values: [15, 20, 30]
+						}
+					},
+					size: {
+						height: 280
+					
+					}
+				});
+				setTimeout(function () {
+					chart.load({
+						columns: [['data', 15]]
+					});
+				}, 2000);
+
+				setTimeout(function () {
+					chart.load({
+						columns: [['data', 20]]
+					});
+				}, 4000);
+
+				setTimeout(function () {
+					chart.load({
+						columns: [['data', 30]]
+					});
+				}, 6000);
+
+			</script>
+		</div>
+
+
+		<div id="menu2" class="tab-pane fade, container" style="text-align: center">
+			<br />
+			<h3> NodeList </h3>
+			<img src="introduce/page2img/nodelist.jpeg" width="600px" height="400px" />
+			<br />
+			<br />
+			<br />
+			<table class="tabless">
+				<tr>
+					<th style="text-align:center">
+						<h3 class="hcss">TOP_NODE</h3>
+					</th>
+					<td>
+						<br />
+							<p>is the fugitive scent of the perfume</p>
+							<p>which one has just put on the skin,</p>
+							<p>it elates a strong alcohol smell</p>
+					</td>
+				</tr>
+
+				<tr>
+						<th style="text-align:center">
+							<h3 class="hcss">MIDDLE_NODE</h3>
+						</th>
+						<td><br />
+								<p>if the scent which emerges from</p>
+										<p>perfume 5 to 30 mn after the </p>
+												<p>application. This note is very often the</p>
+														<p>selection criterion of a perfume.</p>
+						</td>
+				</tr>
+
+				<tr>
+						<th style="text-align:center">
+							<h3 class="hcss">BASE_NODE</h3>
+						</th>
+						<td><br />
+							<p>is the scent which mixed with the smell with the skin with the body.</p>
+							<p>It is a scent which is personal for you.</p>
+							<p>This note appears approximately 3 hours</p>
+							<p>after the application of the perfume.</p>
+						</td>
+					</tr>
+			</table>
+			<br />
+			<br />
+		</div>
+	</div>
+</body>
+</html>

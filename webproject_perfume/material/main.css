@@ -1,0 +1,471 @@
+body {
+    font-family: Georgia, Times, serif;
+}
+
+h1, h2, h3, h5, h6 {
+    text-align: center;
+}
+
+
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    outline: none;
+    color:black;
+    
+}
+
+*:focus { outline:none; }
+
+h2.d-inline-block {
+
+}
+#top_div {
+    background: linear-gradient(to left, rgb(255, 225, 169), rgb(174, 112, 182));
+    width: 100%;
+    height: 10px;
+}
+
+/* 브랜드 추천 페이지에 있는 이미지 */
+.brand-image {
+    height: 180px;
+    width: 180px;
+    line-height: 180px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-animation-duration: 0.7s;
+    animation-duration: 0.7s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    color: white;
+}
+
+.width-700 {
+    width:700px;
+}
+
+/* 향수 추천 페이지에 있는 로고 이미지 */
+#logo {
+    width: 200px;
+    height: 190px;
+}
+
+img:hover {
+    cursor: pointer;
+    animation-name: bounce;
+    -moz-animation-name: bounce;
+}
+
+/* perfuming 로고 부분 */
+.page-header {
+  color: #000000;
+  opacity:0.7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom : 45px;
+}
+
+
+/*** 메뉴 ***/
+.nav-section {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 100%;
+    border-top:1px solid transparent;
+    border-bottom: 1px solid #909090;
+    background-color: white;
+    opacity:0.7;
+    z-index: 3000;
+    outline: none;
+}
+  
+.nav-section.sticky {
+    position: fixed;
+    top: 0;
+    border-top: none;
+    background: white;
+  }
+
+.navbar-expand-md .navbar-nav .nav-link {
+    padding: 10px 25px;
+  }
+
+
+.navbar-light .navbar-nav .nav-link {
+    color: #000000;
+  }
+  
+#MainNav .nav-link.current,
+#MainNav .nav-link:hover {
+    color: #EBC680;
+    background: #ffffff;
+}
+  
+.navbar-light .navbar-toggler {
+    background-color: white;
+}
+  
+.navbar {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.navbar-nav {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 930px;
+}
+
+.navbar .navbar-nav>.active>a,
+.navbar .navbar-nav>.active>a:hover,
+.navbar .navbar-nav>.active>a:focus {
+    color: #EBC680;
+    background-color:transparent;
+}
+
+.navbar .navbar-nav>li>a {
+    color : #000;
+}
+
+.navbar .navbar-nav>li>a :hover {
+    color : #EBC680;
+}
+
+.navbar .navbar-nav>li>a:hover,
+.navbar .navbar-nav>li>a:focus {
+    color: #EBC680;
+    background-color: transparent;
+}
+
+/* 드랍 다운 */
+.dropdown-menu>li>a{
+    line-height: 2;
+    color : #000000;
+    
+}
+.dropdown:hover
+.dropdown-menu {
+    display : block;
+    color :  #EBC680;
+    text-align:  center;
+}
+
+.dropdown-menu>li:hover {
+    background : rgb(109, 109, 109);
+    color : #EBC680;
+}
+
+.dropdown-menu>li>a:hover {
+    background: transparent;
+    border: 0px;
+    color: #EBC680;
+    text-decoration: none;
+}
+
+/* 옆에 세모 안 보이게 하기 */
+.dropdown-toggle::after {
+    display:none;
+}
+
+
+/* 창 크기 줄일때 메뉴 네모박스*/
+button {
+  width: 100px;
+  text-align: center;
+  background: linear-gradient(135deg, #eb5bb4 0%, #f1f360 100%);
+  color: #fff;
+  font-family: 'BenchNine', Arial, sans-serif;
+  border: none;
+  position: relative;
+  height: 60px;
+  font-size: 1.4em;
+
+  cursor: pointer;
+  transition: 800ms ease all;
+  outline: none;
+  border-radius: 15px;
+
+}
+
+button:hover {
+  background: #ffffff;
+  background: -webkit-linear-gradient(left, #eb5bb4 0%, #f1f360 100%);
+
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+
+}
+
+button:before,
+button:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(135deg, #eb5bb4 0%, #f1f360 100%);
+  transition: 400ms ease all;
+}
+
+button:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+
+button:hover:before,
+button:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+} 
+/*** 메뉴 끝 ***/
+
+.features-section {
+    padding-top: 50px;
+    padding-bottom: 85px;
+    padding-left : 100px;
+    padding-right : 100px;
+    margin-top: 50px;
+}
+
+.features2-section {
+    padding-bottom: 85px;
+    padding-left : 100px;
+    padding-right : 100px;
+}
+.situation-section {
+    padding-top: 10px;
+    padding-bottom: 85px;
+    padding-left : 100px;
+    padding-right : 100px;
+    width:700px;
+}
+
+.perfume-section {
+    padding-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+    .navbar-toggler {
+      margin-left: auto;
+      margin-right: 0;
+    }
+  
+    .navbar {
+      text-align: center;
+      padding: 3px 0;
+      margin-right: 0;
+      margin-left: auto;
+    }
+  
+    #MainNav {
+      background: white;
+      border: 1px solid #c6c6c6;
+    }
+  
+    .navbar-light .navbar-toggler {
+      border-radius: 0;
+    }
+  
+    .scroll {
+      margin: 20px auto 0;
+    }
+}
+  
+  
+  @media (max-width: 540px) {
+    .activity-block {
+      flex-direction: column;
+    }
+  
+    .activity-block-text {
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 440px){
+    .features-section {
+      padding-top: 60px;
+      padding-bottom: 55px;
+    }
+  
+  }
+  
+  @media (min-width: 767px) and (max-width: 992px) {
+    .navbar-expand-md .navbar-nav .nav-link {
+      padding: 10px 15px;
+    }
+  }
+
+
+
+  /*브랜드별 이미지 클릭 후 향수들 보여지는 페이지*/
+
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.imgcss {
+  width: 270px;
+  height: 380px;
+
+
+}
+
+figure.snip1384 {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    min-width: 200px;
+    max-width: 240px;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    background-color: #7c4a7a;
+
+    display: inline-block;
+
+}
+
+figure.snip1384 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+figure.snip1384 img {
+    max-width: 100%;
+    backface-visibility: hidden;
+    vertical-align: top;
+}
+
+figure.snip1384:after,
+figure.snip1384 figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+figure.snip1384:after {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.65);
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    opacity: 0;
+}
+
+figure.snip1384 figcaption {
+    z-index: 1;
+    padding: 40px;
+}
+
+figure.snip1384 h3,
+figure.snip1384 .links {
+    width: 100%;
+    margin: 5px 0;
+    padding: 0;
+}
+
+figure.snip1384 h3 {
+    line-height: 1.1em;
+    font-weight: 700;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+figure.snip1384 p {
+    font-size: 0.8em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 0;
+    top: 50%;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+}
+
+figure.snip1384 i {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 20px 25px;
+    font-size: 34px;
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+}
+
+figure.snip1384 a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+figure.snip1384:hover img,
+figure.snip1384.hover img {
+    zoom: 1;
+    filter: alpha(opacity=50);
+    -webkit-opacity: 0.5;
+    opacity: 0.5;
+}
+
+figure.snip1384:hover:after,
+figure.snip1384.hover:after {
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+}
+
+figure.snip1384:hover h3,
+figure.snip1384.hover h3,
+figure.snip1384:hover p,
+figure.snip1384.hover p,
+figure.snip1384:hover i,
+figure.snip1384.hover i {
+    -webkit-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+    opacity: 1;
+}
+/*** footer ***/
+footer {
+  
+    background: linear-gradient(to left, rgb(255, 225, 169), rgb(174, 112, 182));
+    width: 100%;
+    padding : 10px;
+  }
+  
+footer-row {
+    align-items: center;
+}
+
+/*** footer end ***/

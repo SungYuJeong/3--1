@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css" />
+    <title>recommand</title>
+    <style>
+        .img1 {
+            width: 430px;
+            height: 60px;
+        }
+
+        #img2 {
+            width: 260px;
+            height: 60px;
+        }
+
+        .img3 {
+            width: 335;
+            height: 60px;
+        }
+
+        @import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+
+        #snip15351 {
+            background-color: #99d0e0;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 10px;
+            font-family: 'BenchNine', Arial, sans-serif;
+            font-size: 1em;
+            font-size: 22px;
+            line-height: 1em;
+            margin: 15px 40px;
+            outline: none;
+            padding: 12px 40px 10px;
+            position: relative;
+            font-weight: 700;
+        }
+
+        #snip15352 {
+            background-color: #8dc9c9;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 10px;
+            font-family: 'BenchNine', Arial, sans-serif;
+            font-size: 1em;
+            font-size: 22px;
+            line-height: 1em;
+            margin: 15px 40px;
+            outline: none;
+            padding: 12px 40px 10px;
+            position: relative;
+            font-weight: 700;
+        }
+
+        #snip15353 {
+            background-color: #d8cb91;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 10px;
+            font-family: 'BenchNine', Arial, sans-serif;
+            font-size: 1em;
+            font-size: 22px;
+            line-height: 1em;
+            margin: 15px 40px;
+            outline: none;
+            padding: 12px 40px 10px;
+            position: relative;
+            font-weight: 700;
+        }
+
+        #snip15354 {
+            background-color: #f896bf;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 10px;
+            font-family: 'BenchNine', Arial, sans-serif;
+            font-size: 1em;
+            font-size: 22px;
+            line-height: 1em;
+            margin: 15px 40px;
+            outline: none;
+            padding: 12px 40px 10px;
+            position: relative;
+            font-weight: 700;
+        }
+
+        #snip15355 {
+            background-color: #f8ad96;
+            border: none;
+            color: #ffffff;
+            cursor: pointer;
+            display: inline-block;
+            border-radius: 10px;
+            font-family: 'BenchNine', Arial, sans-serif;
+            font-size: 1em;
+            font-size: 22px;
+            line-height: 1em;
+            margin: 15px 40px;
+            outline: none;
+            padding: 12px 40px 10px;
+            position: relative;
+            font-weight: 700;
+        }
+
+        #snip15351:before,
+        #snip15351:after {
+            border-color: transparent;
+            -webkit-transition: all 0.25s;
+            transition: all 0.25s;
+            border-style: solid;
+            border-width: 0;
+            content: "";
+            height: 24px;
+            position: absolute;
+            width: 24px;
+        }
+
+        #snip15351:before {
+            border-radius: 5px;
+            border-color: #ff9e59;
+            border-right-width: 2px;
+            border-top-width: 2px;
+            right: -5px;
+            top: -5px;
+        }
+
+        #snip15351:after {
+            border-bottom-width: 2px;
+            border-radius: 5px;
+            border-color: #ff9e59;
+            border-left-width: 2px;
+            bottom: -5px;
+            left: -5px;
+        }
+
+        #snip15351:hover,
+        #snip15351.hover {
+            background-color: #f1d867;
+        }
+
+        #snip15351:hover:before,
+        #snip15351.hover:before,
+        #snip15351:hover:after,
+        #snip15351.hover:after {
+            height: 100%;
+            width: 100%;
+        }
+
+        #snip15352:before,
+        #snip15352:after {
+            border-color: transparent;
+            -webkit-transition: all 0.25s;
+            transition: all 0.25s;
+            border-style: solid;
+            border-width: 0;
+            content: "";
+            height: 24px;
+            position: absolute;
+            width: 24px;
+        }
+
+        #snip15352:before {
+            border-radius: 5px;
+            border-color: #ff9e59;
+            border-right-width: 2px;
+            border-top-width: 2px;
+            right: -5px;
+            top: -5px;
+        }
+
+        #snip15352:after {
+            border-bottom-width: 2px;
+            border-radius: 5px;
+            border-color: #ff9e59;
+            border-left-width: 2px;
+            bottom: -5px;
+            left: -5px;
+        }
+
+        #snip15352:hover,
+        #snip15352.hover {
+            background-color: #fda4a1;
+        }
+
+        #snip15352:hover:before,
+        #snip15352.hover:before,
+        #snip15352:hover:after,
+        #snip15352.hover:after {
+            height: 100%;
+            width: 100%;
+        }
+
+        #snip15353:before,
+        #snip15353:after {
+            border-color: transparent;
+            -webkit-transition: all 0.25s;
+            transition: all 0.25s;
+            border-style: solid;
+            border-width: 0;
+            content: "";
+            height: 24px;
+            position: absolute;
+            width: 24px;
+        }
+
+        #snip15353:before {
+            border-radius: 5px;
+            border-color: #ff9e59;
+            border-right-width: 2px;
+            border-top-width: 2px;
+            right: -5px;
+            top: -5px;
+        }
+
+        #snip15353:after {
+            border-bottom-width: 2px;
+            border-radius: 5px;
+            border-color: #ff9e59;
+            border-left-width: 2px;
+            bottom: -5px;
+            left: -5px;
+        }
+
+        #snip15353:hover,
+        #snip15353.hover {
+            background-color: #cc5757;
+        }
+
+        #snip15353:hover:before,
+        #snip15353.hover:before,
+        #snip15353:hover:after,
+        #snip15353.hover:after {
+            height: 100%;
+            width: 100%;
+        }
+
+        #snip15354:before,
+        #snip15354:after {
+            border-color: transparent;
+            -webkit-transition: all 0.25s;
+            transition: all 0.25s;
+            border-style: solid;
+            border-width: 0;
+            content: "";
+            height: 24px;
+            position: absolute;
+            width: 24px;
+        }
+
+        #snip15354:before {
+            border-radius: 5px;
+            border-color: #ff9e59;
+            border-right-width: 2px;
+            border-top-width: 2px;
+            right: -5px;
+            top: -5px;
+        }
+
+        #snip15354:after {
+            border-bottom-width: 2px;
+            border-radius: 5px;
+            border-color: #ff9e59;
+            border-left-width: 2px;
+            bottom: -5px;
+            left: -5px;
+        }
+
+        #snip15354:hover,
+        #snip15354.hover {
+            background-color: #e9d07d;
+        }
+
+        #snip15354:hover:before,
+        #snip15354.hover:before,
+        #snip15354:hover:after,
+        #snip15354.hover:after {
+            height: 100%;
+            width: 100%;
+        }
+
+        #snip15355:before,
+        #snip15355:after {
+            border-color: transparent;
+            -webkit-transition: all 0.25s;
+            transition: all 0.25s;
+            border-style: solid;
+            border-width: 0;
+            content: "";
+            height: 24px;
+            position: absolute;
+            width: 24px;
+        }
+
+        #snip15355:before {
+            border-radius: 5px;
+            border-color: #ff9e59;
+            border-right-width: 2px;
+            border-top-width: 2px;
+            right: -5px;
+            top: -5px;
+        }
+
+        #snip15355:after {
+            border-bottom-width: 2px;
+            border-radius: 5px;
+            border-color: #ff9e59;
+            border-left-width: 2px;
+            bottom: -5px;
+            left: -5px;
+        }
+
+        #snip15355:hover,
+        #snip15355.hover {
+            background-color: #c77aa4;
+        }
+
+        #snip15355:hover:before,
+        #snip15355.hover:before,
+        #snip15355:hover:after,
+        #snip15351.hover:after {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 페이지 헤더 -->
+    <div id="top_div"></div>
+    <div class="container">
+        <div class="col-12 text-center">
+            <div class="page-header">
+                <h2 class="d-inline-block font-weight-bold">Perfuming</h2>
+            </div>
+        </div>
+    </div>
+
+    <!-- 메뉴 -->
+    <div class="nav-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MainNav"
+                            aria-controls="MainNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="MainNav">
+                            <ul class="navbar-nav mx-auto navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Introduce</a>
+                                </li>
+                                <li class="dropdown nav-link">
+                                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true">Recommendation</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="age_recommend.html">Ages</a></li>
+                                        <li><a href="brand_recommend.html">Brand</a></li>
+                                        <li><a href="situation_recommend.html">Situation</a></li>
+                                        <li><a href="weather.html">Weather</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown nav-link">
+                                    <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                        aria-haspopup="true">My Perfume</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Material</a></li>
+                                        <li><a href="#">Perfume</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#company">Map</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section>
+        <div class="features-section text-center">
+            <h3 style="font-family: 'BenchNine', Arial, sans-serif">We'd like to be recommended the scent</h3>
+            <a href="sit1.html"><button id="snip15351">that soothes me after my business meeting.</button></a>
+            <a href="sit2.html"><button id="snip15352">for a burning Friday.</button></a>
+            <a href="sit3.html"><button id="snip15353">for healing now Sunday evening.</button></a>
+            <a href="sit4.html"><button id="snip15354">that is encouraging the beginning of the week.</button></a>
+            <a href="sit5.html"><button id="snip15355">of the time when I'm about to go on a date.</button></a>
+        </div>
+
+    </section>
+    <footer class="fixed-bottom" id="bottom_div">
+        <p class="text-center">Copyright (c) Sung-YuJung Jung-HeeJu</p>
+    </footer>
+
+
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="main.js"></script>
+    <script>
+        $(window).scroll(function () {
+            // Make sticky header
+            if ($(this).scrollTop() > 201) {
+                $(".nav-section").addClass("sticky");
+            } else {
+                $(".nav-section").removeClass("sticky");
+            }
+        });
+    </script>
+</body>
+
+</html>

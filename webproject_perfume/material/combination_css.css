@@ -1,0 +1,170 @@
+		
+#flower {
+	float: left;
+    background-color: white;
+	width: 270px;
+	height: 600px;
+    text-align: center;
+    border: 3px solid bisque;
+	border-radius: 25px ;
+	padding: 5px;
+	
+	margin-left:40px;
+	margin-bottom:30px;
+}
+#fruit {
+	float: right;
+    display: block;
+    background-color: white;
+	width: 270px;
+	height: 600px;
+    text-align: center;
+    border: 3px solid bisque;
+    border-radius: 25px ;
+	margin-right:40px;
+	margin-bottom:30px;
+	padding: 5px;
+
+}
+#other {
+	clear: both;
+    background-color: white;
+	width: 600px;
+	height: 250px;
+    text-align: center;
+    border: 3px solid bisque;
+    border-radius: 25px ;
+	padding-top: 5px;
+	margin: 20px;
+}
+#makes {
+	width: 590px;
+    height: 900px;
+	background-color: white;
+    text-align: center;
+    border: 3px solid bisque;
+    border-radius: 25px ;
+	padding-top: 30px;
+	margin: 20px;
+}
+#make_main {
+	width:390px;
+	height: 320px;
+    background-color: white;
+    text-align: center;
+    border: 3px solid bisque;
+    border-radius: 25px ;
+	z-index:100;
+	position: absolute;
+	top: 370px;
+	margin-left:95px;
+	float: left;
+}
+
+#perfume{
+	width: 300px;
+	height: 400px;
+	padding: 5px;
+	margin: 20px;
+	background-color: white;
+	text-align: center;
+	border: 3px solid beige;
+	border-radius: 25px ;
+
+}
+#images{
+	padding: 10px;
+	position: relative;
+
+}
+#make {
+	width: 600px;
+	height: 1050px;
+	background-color: white;
+	text-align: center;
+	border: 3px solid beige;
+	border-radius: 25px ;
+	padding: 5px;
+	margin: 20px;
+
+
+}
+
+#make_mains {
+	width: 370px;
+	height: 200px;
+	background-color: white;
+	text-align: center;
+	border: 3px solid beige;
+	border-radius: 25px ;
+	z-index:100;
+	position: absolute;
+	top: 480px;
+	margin-left:105px;
+	float: left;
+
+
+}
+#make_main2 {
+	width: 370px;
+	height: 200px;
+	background-color: white;
+	text-align: center;
+	border: 3px solid beige;
+	border-radius: 25px ;
+	
+	z-index:100;
+	position: absolute;
+	top: 700px;
+	margin-left:105px;
+	float: left;
+
+
+}
+
+#image{
+	position: relative;
+}
+#table_hide{
+	margin: auto;
+	border: 0px;
+	background-color: white;
+	
+}
+img {
+	width: 80px;
+	height: 78px;
+	padding: 5px;
+}
+h2 {
+	font-size:5;
+	font-family:Georgia;
+}
+
+#next{
+	width: 100px;
+	height: 190px;
+}
+.tables{
+	
+	margin: auto;
+	border: 0px;
+	border-radius: 20px;
+	background-color: rgb(255, 255, 255);
+	padding: 0px;
+	position: relative;
+}
+
+.fl {
+	float: left;
+}
+
+#myTable{
+	background-color: rgb(255, 255, 255);
+	margin:auto;
+	width : 60%;
+	border-radius: 20px;
+	padding-left:20%;
+	padding-right:20%;
+	text-align: center;
+}

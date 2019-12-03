@@ -1,0 +1,103 @@
+        body {
+            font-family: "Georgia", Times, serif;
+        }
+
+        h1 {
+          
+            text-align: center;
+        }
+
+        #top_div {
+            background: linear-gradient(to left, rgb(255, 225, 169), rgb(174, 112, 182));
+
+            height: 10px;
+        }
+
+        ul {
+
+            background-color: white;
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+
+        ul li {
+            display: inline-block;
+            margin-left: 8px;
+            z-index: 1;
+
+        }
+
+        li a {
+
+            display: block;
+
+            line-height: 50px;
+            margin: 0px;
+            padding: 0px 25px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        li a:visited {
+            color: rgb(117, 114, 114);
+        }
+
+        li a:hover,
+        ul li:hover a {
+            color: #EBC680;
+            text-decoration: none;
+        }
+
+        li ul {
+            background: rgb(255, 226, 226);
+            display: none;
+            /* 평상시에는 드랍메뉴가 안보이게 하기 */
+            height: auto;
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+            position: absolute;
+            width: 200px;
+            z-index: 200;
+            /*top:1em;
+/*left:0;*/
+        }
+
+        li:hover ul {
+            display: block;
+            /* 마우스 커서 올리면 드랍메뉴 보이게 하기 */
+        }
+
+        li li {
+            background: rgb(109, 109, 109);
+            display: block;
+            float: none;
+            margin: 0px;
+            padding: 0px;
+            width: 200px;
+        }
+
+        li:hover li a {
+            background: none;
+        }
+
+        li ul a {
+            display: inline;
+            height: 50px;
+            font-size: 12px;
+            font-style: normal;
+            margin: 0px;
+            padding: 0px 10px 0px 15px;
+            text-align: left;
+        }
+
+        li ul a:hover,
+        li ul li:hover a {
+            background: rgb(71, 71, 71);
+            border: 0px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+ 

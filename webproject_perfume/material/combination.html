@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<title>롭</title>
+	<link type"text/css" rel="stylesheet" href="combination_css.css" />
+
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="main.css" />
+
+	<script type="text/javascript" src="combination_js.js"></script>
+
+
+</head>
+
+<body>
+	
+	<table>
+		<tr>
+			<td>
+				<div id="flower" class="col-12 text-center" ondrop="drop_out(this, event);" ondragenter="return false;" ondragover="return false;">
+					<h2>FLORAL</h2>
+					<script>
+						for (var i = 1; i < 19; i++) {
+
+							document.write('<img src="material/img/Floral/mat' + i + '.png" alt=" " draggable="true" id="make' + (18 + i) + '"ondragstart="drag(this, event)" />')
+						}
+					</script>
+				</div>
+
+				<div id="fruit" class="col-12 text-center" ondrop="drop_out(this, event);" ondragenter="return false;" ondragover="return false;">
+					<h2>FRUITY</h2>
+					<script>
+						for (var i = 1; i < 19; i++) {
+
+							document.write('<material/img src="img/Fruity/mat' + i + '.png" alt=" " draggable="true" id="make' + (36 + i) + '"ondragstart="drag(this, event)" />')
+						}
+					</script>
+				</div>
+
+				<div id="other" class="col-12 text-center" ondrop="drop_out(this, event);" ondragenter="return false;" ondragover="return false;">
+					<h2>OTHER</h2>
+					<script>
+						for (var i = 1; i < 14; i++) {
+
+							document.write('<material/img src="img/Other/mat' + i + '.png" alt=" " draggable="true" id="make' + (54 + i) + '"ondragstart="drag(this, event)" />')
+						}
+					</script>
+				</div>
+
+			</td>
+			<td>
+				<img id="next" src="next11.png" />
+			</td>
+
+
+
+			<td>
+				<div id="make" class="col-12 text-center">
+					<img id="image" src="material/img/cologne.png" style="width:600px; height:880px;" />
+					<div id="make_main" ondrop="drop_in(this, event);" ondragenter="return false;"
+						ondragover="return false;">
+						<h2>DRAG HERE</h2>
+					</div>
+
+				</div>
+
+				<button name="ok" value="ok" onclick="changeimage('myTable')">OK</button>
+				
+				<br />
+				<br />
+
+
+			</td>
+		</tr>
+	</table>
+
+	
+	<table id="table_hide" border="0">
+		<tr>
+			<td>
+				<br />
+				<br />
+				<br />
+				<br />
+				<br />
+
+			</td>
+		</tr>
+	</table>
+	
+	
+	<table id="myTable">
+		<tbody>
+			<tr>
+			</tr>
+		</tbody>
+	</table>
+
+
+
+
+</body>
+
+</html>

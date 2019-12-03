@@ -1,0 +1,168 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="main.css" />
+
+	<style>
+		@keyframes bounce {
+
+			0%,
+			100%,
+			20%,
+			50%,
+			80% {
+				-webkit-transform: translateY(0);
+				-ms-transform: translateY(0);
+				transform: translateY(0)
+			}
+
+			40% {
+				-webkit-transform: translateY(-30px);
+				-ms-transform: translateY(-30px);
+				transform: translateY(-30px)
+			}
+
+			60% {
+				-webkit-transform: translateY(-15px);
+				-ms-transform: translateY(-15px);
+				transform: translateY(-15px)
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 페이지 헤더 -->
+	<div id="top_div"></div>
+	<div class="container">
+		<div class="col-12 text-center">
+			<div class="page-header">
+				<h2 class="d-inline-block font-weight-bold">Perfuming</h2>
+			</div>
+		</div>
+	</div>
+
+	<!-- 메뉴 -->
+	<div class="nav-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 offset-sm-2">
+					<nav class="navbar navbar-expand-md navbar-light">
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#MainNav"
+							aria-controls="MainNav" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+						<div class="collapse navbar-collapse" id="MainNav">
+							<ul class="navbar-nav mx-auto navbar-nav">
+								<li class="nav-item active">
+									<a class="nav-link" href="#">Introduce</a>
+								</li>
+								<li class="dropdown nav-link">
+									<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button"
+										aria-haspopup="true">Recommendation</a>
+									<ul class="dropdown-menu">
+										<li><a href="age_recommend.html">Ages</a></li>
+										<li><a href="brand_recommend.html">Brand</a></li>
+										<li><a href="situation_recommend.html">Situation</a></li>
+										<li><a href="weather.html">Weather</a></li>
+									</ul>
+								</li>
+								<li class="dropdown nav-link">
+									<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true">My
+										Perfume</a>
+									<ul class="dropdown-menu">
+										<li><a href="#">Material</a></li>
+										<li><a href="#">Perfume</a></li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#company">Map</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<section>
+		<div class="features-section">
+			<div class="row">
+				<div class="col-sm-2 offset-sm-1">
+					<a href="ferrari.html"><img class="bounce_button brand-image" src="brand_img/1.jpg" /> </a>
+				</div>
+				<div class="col-sm-2">
+					<a href="burberry.html"><img class="bounce_button brand-image" src="brand_img/2.jpg" /> </a>
+				</div>
+				<div class="col-sm-2">
+					<a href="dior.html"><img class="bounce_button brand-image" src="brand_img/3.jpg" /> </a>
+				</div>
+				<div class="col-sm-2">
+					<a href="chanel.html"><img class="bounce_button brand-image" src="brand_img/4.jpg" /> </a>
+				</div>
+				<div class="col-sm-2">
+					<a href="jomalon.html"><img class="bounce_button brand-image" src="brand_img/5.jpg" /></a><br /><br />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 offset-sm-1">
+					<img class="bounce_button brand-image" src="brand_img/6.jpg" />
+				</div>
+				<div class="col-sm-2">
+					<img class="bounce_button brand-image" src="brand_img/7.jpg" />
+				</div>
+				<div class="col-sm-2">
+					<img class="bounce_button brand-image" src="brand_img/8.jpg" />
+				</div>
+				<div class="col-sm-2">
+					<img class="bounce_button brand-image" src="brand_img/9.jpg" />
+				</div>
+				<div class="col-sm-2">
+					<img class="bounce_button brand-image" src="brand_img/10.jpg" />
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2 offset-sm-1">
+					<img class="bounce_button brand-image" src="brand_img/11.jpg" />
+				</div>
+				<div class="col-sm-2">
+					<img class="bounce_button brand-image" src="brand_img/12.jpg" />
+				</div>
+				<div class="col-sm-2">
+					<img class="bounce_button brand-image" src="brand_img/15.jpg" />
+				</div>
+				<div class="col-sm-2">
+					<img class="bounce_button brand-image" src="brand_img/14.jpg" />
+				</div>
+				<div class="col-sm-2">
+					<img class="bounce_button brand-image" src="brand_img/13.jpg" />
+				</div>
+			</div>
+	</section>
+
+
+
+	<footer id="bottom_div">
+		<p class="text-center">Copyright (c) Sung-YuJung Jung-HeeJu</p>
+	</footer>
+
+
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script>
+		$(window).scroll(function () {
+			// Make sticky header
+			if ($(this).scrollTop() > 201) {
+				$(".nav-section").addClass("sticky");
+			} else {
+				$(".nav-section").removeClass("sticky");
+			}
+		});
+	</script>
+</body>
+
+</html>
